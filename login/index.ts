@@ -11,7 +11,7 @@ interface Params {
 
 async function login({ page, email, password }: Params): Promise<void> {
   // Navigate to LinkedIn
-  await page.goto('https://www.linkedin.com/', { waitUntil: 'load' });
+  await page.goto('https://www.linkedin.com/login?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin', { waitUntil: 'load' });
 
   // Enter login credentials and submit the form
   await page.type(selectors.emailInput, email);

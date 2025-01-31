@@ -24,8 +24,8 @@ export default {
 
   // Login
   captcha: "#captcha-internal",
-  emailInput: "#session_key",
-  passwordInput: "#session_password",
+  emailInput: "username",
+  passwordInput: "password",
   loginSubmit: "button[class*='sign-in-form__submit-btn']",
   skipButton: "button[text()='Skip']",
 
